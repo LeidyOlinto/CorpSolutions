@@ -5,7 +5,7 @@
 > 🚀 Stack utilizada
 
 **Back-end:**
-`express`
+`express`,`jsonwebtoken`, `multer`,`bcrypt`,`nodemon`,`cors`
 
 > 🔧 Instalação
 
@@ -25,6 +25,12 @@
       <a href="">
         <img src="" width=100 />
         <p>Fabrício <br/>Portela</p>
+      </a>
+    </td>
+     <td>
+      <a href="https://github.com/LeidyOlinto">
+        <img src="https://avatars.githubusercontent.com/u/100310458?v=4" width=100 />
+        <p>Leidy <br/>Olinto</p>
       </a>
     </td>
     <td>
@@ -49,12 +55,6 @@
       <a href="">
         <img src="" width=100 />
         <p>Marcelo <br/>Mesquita</p>
-      </a>
-    </td>
-    <td>
-      <a href="https://github.com/LeidyOlinto">
-        <img src="https://avatars.githubusercontent.com/u/100310458?v=4" width=100 />
-        <p>Leidy <br/>Olinto</p>
       </a>
     </td>
     <td>
