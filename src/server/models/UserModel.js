@@ -5,20 +5,49 @@ const connection = require('../config/db');
 class User {
   
   register(user) {
-    const { name, login, password, salt } = user
+    const { login, password, salt } = user
     const query = `
       INSERT INTO users 
-        (name, login, password, salt)
+        (id, login, password, salt, isCandidate)
       VALUES 
-      ('${name}', '${login}', '${password}', '${salt}')
+        (UUID(), '${login}', '${password}', '${salt}', FALSE)
       RETURNING id;
     `
     return new Promise((resolve, reject) => {
       connection.query(query, (error, results) => {
-        console.log(error)
-        console.log(results)
+        console.log("errors: ", error)
+        console.log("results: ", results)
         if (error) return reject(error)
-        return resolve(results.rows[0].id)
+        return resolve(results[0].id)
+      })
+    })
+  }
+
+  updateById(id, changes){
+    
+    let updateFields = [];
+    
+    for(let key in changes){
+      let value = changes[key]
+      updateFields.push(`${key}='${value}'`)
+    }
+    
+    let query = `
+      UPDATE users 
+      SET 
+        ${updateFields.join(', ')}
+      WHERE id='${id}';
+    `
+    return new Promise((resolve, reject) => {
+      connection.query(query, (error, results) => {
+        
+        if(error) return reject(error)
+        
+        if(results.changedRows == 0) return reject("Nenhuma linha modificada")
+        
+        if(results.changedRows > 1) return reject("Mais de uma linha modificada")
+        
+        return resolve("Sucesso")
       })
     })
   }
