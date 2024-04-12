@@ -18,7 +18,6 @@ app.put('/:id', (req, res)=> res.send('PUT'))
 
 const connection = require('./config/connection')
 
-
 const PORT = process.env.PORT_SERVER || 8080
 
 app.listen(PORT, ()=>{ console.log(`Servidor iniciado: http://localhost:${PORT}/`) })
