@@ -1,0 +1,22 @@
+{
+  "name": "corpsolutions",
+  "version": "1.0.0",
+  "description": "Diversity",
+  "main": "index.js",
+  "scripts": {
+    "test": "run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeidyOlinto/CorpSolutions.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LeidyOlinto/CorpSolutions/issues"
+  },
+  "homepage": "https://github.com/LeidyOlinto/CorpSolutions#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
