@@ -12,9 +12,6 @@ const pool = mysql.createPool({
 });
 
 
-console.log(process.env.DB_PASSWORD)
-
-// Test the connection
 pool.getConnection((err, connection) => {
   if (err) {
     console.error('Error connecting to MySQL database:', err);
