@@ -42,12 +42,6 @@
     <td>
       <a href="">
         <img src="" width=100 />
-        <p> <br/></p>
-      </a>
-    </td>
-    <td>
-      <a href="">
-        <img src="" width=100 />
         <p> Raphael<br/>S</p>
       </a>
     </td>
