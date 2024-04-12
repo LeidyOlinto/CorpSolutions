@@ -1,0 +1,47 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Adahack",
+    "dateExported": "2024-04-12T22:55:03.807Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "5a01bb30-945f-487c-a9c6-f2b373fd7789",
+            "colId": "7ff16b73-c99e-47ba-8382-8d99b52f7eef",
+            "containerId": "",
+            "name": "Register",
+            "url": "http://localhost:8080/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-04-12T22:54:33.906Z",
+            "modified": "2024-04-12T22:54:33.906Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"login\": \"marcelo@corp.com.br\",\n  \"password\": \"teste123\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "b9c8839e-b270-45df-bb8f-fd36b6e16408",
+            "colId": "7ff16b73-c99e-47ba-8382-8d99b52f7eef",
+            "containerId": "",
+            "name": "Login",
+            "url": "http://localhost:8080/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-04-12T22:54:45.518Z",
+            "modified": "2024-04-12T22:54:45.518Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"login\": \"marcelo@corp.com.br\",\n  \"password\": \"teste123\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}

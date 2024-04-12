@@ -4,19 +4,16 @@ const connection = require('../config/db');
 
 class User {
   
-  register(user) {
-    const { login, password, salt } = user
+  register(login, password) {
     const query = `
       INSERT INTO users 
-        (id, login, password, salt, isCandidate)
+        (id, login, password, isCandidate)
       VALUES 
-        (UUID(), '${login}', '${password}', '${salt}', FALSE)
+        (UUID(), '${login}', '${password}', FALSE)
       RETURNING id;
     `
     return new Promise((resolve, reject) => {
       connection.query(query, (error, results) => {
-        console.log("errors: ", error)
-        console.log("results: ", results)
         if (error) return reject(error)
         return resolve(results[0].id)
       })
@@ -67,7 +64,7 @@ class User {
     return new Promise((resolve, reject)=>{
       connection.query(query, (error, results) => {
         if(error) throw new Error('Database error')
-        resolve(results.rows[0])
+        resolve(results[0])
       })
     })
   }
