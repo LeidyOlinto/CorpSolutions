@@ -9,7 +9,18 @@
 
 > 🔧 Instalação
 
+1. Abrir o terminal.
+2. Acessar a pasta onde deseja criar o projeto
+3. Digitar o comando abaixo: ```git clone https://github.com/LeidyOlinto/CorpSolutions.git```
 
+4. Criar um arquivo chamado ".env" na pasta raiz e adicionar o conteúdo abaixo:
+
+````
+DB_HOST=srv1071.hstgr.io
+DB_USER=u953352787_adahack
+DB_PASSWORD=[rPbBXk=d+9A
+DB_DATABASE=u953352787_adahack
+````
 
 > 🏆 Equipe
 
@@ -52,8 +63,8 @@
       </a>
     </td>
     <td>
-      <a href="">
-        <img src="" width=100 />
+      <a href="https://github.com/mmmarcelom">
+        <img src="https://avatars.githubusercontent.com/u/52570539?v=4" width=100 />
         <p>Marcelo <br/>Mesquita</p>
       </a>
     </td>
