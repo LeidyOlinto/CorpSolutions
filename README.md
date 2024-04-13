@@ -33,7 +33,7 @@ Cada trilha conteve grupos de até 10 participantes.
 
 ### Case
 
-````
+```
 A Jornada da Corp Solutions rumo à Diversidade e Inclusão
 
 Contexto Histórico:
@@ -68,7 +68,7 @@ Com o recente investimento, a empresa planeja expandir sua equipe, dobrando o n�
 Formato do Modelo de Trabalho:
 
 A Corp Solutions adota um modelo de trabalho flexível, que inclui opções de trabalho remoto e horários flexíveis.
-````
+```
 
 <div id='team' /> 
 
